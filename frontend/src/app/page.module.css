@@ -1,0 +1,69 @@
+/* ── Page layout ── */
+
+/* Centers the card vertically and horizontally on the screen */
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+/* White card that holds all the interactive elements */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Primary action button */
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+/* Greyed out while loading or no file is selected */
+.button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Red error message shown below the button */
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+/* ── PredictionResult styles ── */
+
+/* Sits below the button, separated by a thin rule */
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Small uppercase section label (e.g. "Prediction", "Confidence") */
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+/* The predicted class name displayed prominently */
+.prediction {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-transform: capitalize;
+}
+
+/* Percentage value shown to the right of the bar */
+.confidence {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4f46e5;
+  text-align: right;
+}
+
+/* Grey track behind the progress bar */
+.barTrack {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+/* Coloured fill — width is set inline in the component */
+.barFill {
+  height: 100%;
+  background-color: #4f46e5;
+  border-radius: 999px;
+  transition: width 0.4s ease; /* Smoothly animates in when the result appears */
+}
