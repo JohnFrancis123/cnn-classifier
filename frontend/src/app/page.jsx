@@ -6,11 +6,11 @@ import PredictionResult from "../components/PredictionResult";
 import styles from "./page.module.css";
 
 export default function Home() {
-  // selectedFile  — the File object the user chose
-  // preview       — a temporary browser URL used to display the image
-  // result        — the JSON response from the FastAPI /predict endpoint
-  // loading       — true while the API request is in flight
-  // error         — holds an error message if something goes wrong
+  // selectedFile - the File object the user chose
+  // preview - a temporary browser URL used to display the image
+  // result - the JSON response from the FastAPI /predict endpoint
+  // loading - true while the API request is in flight
+  // error - holds an error message if something goes wrong
   const [selectedFile, setSelectedFile] = useState(null);
   const [preview, setPreview] = useState(null);
   const [result, setResult] = useState(null);
